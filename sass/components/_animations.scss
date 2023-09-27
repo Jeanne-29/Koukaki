@@ -1,0 +1,112 @@
+//Rotation fleurs
+
+@keyframes rotating {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+.site-footer {
+	&::after {
+		animation: rotating 10s normal linear infinite;
+	}
+	ul {
+		&::after {
+			animation: rotating 10s normal linear infinite;
+		}
+	}
+	&::before {
+		animation: rotating 10s normal linear infinite;
+	}
+}
+.story__article {
+	&::after {
+		animation: rotating 10s normal linear infinite;
+	}
+}
+#studio {
+	h2 {
+		&::before {
+			animation: rotating 10s normal linear infinite;
+		}
+		&::after {
+			animation: rotating 10s normal linear infinite;
+		}
+	}
+}
+.story {
+	h2 {
+		&::after {
+			animation: rotating 10s normal linear infinite;
+		}
+	}
+}
+.fleur {
+	animation: rotating 10s normal linear infinite;
+}
+
+//Fin de rotation des fleurs
+
+
+// Effet d'apparitions sur les sections de la page en fade in
+
+#place {
+    animation: fadein 4s ease-in forwards;
+    opacity: 0;
+    @keyframes fadein{
+        from {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }  
+}
+
+#studio {
+    animation: fadeIn2 4s ease-in forwards;
+    opacity: 0;
+    @keyframes fadeIn2{
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }  
+}
+
+#characters {
+
+    animation: fadeIn3 4s ease-in forwards;
+    opacity: 0;
+    @keyframes fadeIn3{
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }  
+}
+
+#story {
+
+    animation: fadeIn4 4s ease-in forwards;
+    opacity: 0;
+    @keyframes fadeIn4{
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }  
+}
