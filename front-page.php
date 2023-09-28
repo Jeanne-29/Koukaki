@@ -5,8 +5,8 @@ get_header();
 
     <main id="primary" class="site-main">
         <section class="banner">
-            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
-            <video id="background-video" autoplay loop poster="" src="<?php echo get_stylesheet_directory_uri () .'/assets/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?>" type="video" ></video>
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants" class="logo">
+            <video id="background-video" autoplay muted loop="" src="<?php echo get_stylesheet_directory_uri () .'/assets/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?>" type="video/mp4"></video>
         </section>
         <section id="#story" class="story">
             <h2>L'histoire</h2>
